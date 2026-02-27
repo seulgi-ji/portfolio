@@ -1,0 +1,133 @@
+/* =======================================================index css */
+/* 모바일 기준 w440 */
+html {scroll-behavior: smooth;}/* 스크롤 애니메이션 효과 */
+/* firefox */
+html {scrollbar-width: thin; scrollbar-color: #222 #aaa;}
+/* opera */
+html::-o-scrollbar {width: 5px;}
+html::-o-scrollbar-thumb {background-color:#222 ; border-radius: 5px;}
+/* chrome, sarari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0,0,0,0.3);}
+::-webkit-scrollbar-thumb {background-color: #222; border-radius: 5px;}
+body {background-color: #222;}
+#wrap {
+    width: 440px;/* 디자인 기준 크기(아이폰 17프로맥스) */
+    min-width: 320px; /* 최소 제한 너비(고정)*/
+    max-width: 440px;/* 최대 제한 너비(디자인에 따라 다름) */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    background-color: #fff;
+    margin: 50px auto 0;
+    overflow-x: hidden;
+    height: 100vh;
+}
+/* =======================================================1. intro */
+#wrap .intro {
+    height: 100vh;
+    background: linear-gradient(#fff, #FFA0A0 40%);
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+}
+#wrap .intro h1 {}
+#wrap .intro h1 span {
+    display: block; text-align: center;
+    line-height: 1.5;
+}
+#wrap .intro h1 span:nth-child(1) {
+    font-size: 1.13rem;
+    font-weight: 400;
+}
+#wrap .intro h1 span:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+#wrap .intro h1 .name {
+    font-size: 1.33rem;
+    font-weight: 600;
+}
+/* =======================================================2. info */
+#wrap .info {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#wrap .info .photo {
+    width: 195px; height: 212px;
+    border-radius: 20px;
+    background-color: #d5d5d5;
+}
+#wrap .info .photo img {width: 100%;}
+#wrap .info .me {
+    padding: 20px 0; 
+    display: flex; flex-flow: row wrap;
+    justify-content: space-around;
+}
+#wrap .info .me li {
+    width: 100%; text-align: center; margin: 0 0 12px;
+}
+#wrap .info .me li:nth-child(1) {text-align: right;}
+#wrap .info .me li:nth-child(2) {text-align: left;}
+#wrap .info .me li:nth-child(1),
+#wrap .info .me li:nth-child(2) {width: 40%;}
+#wrap .info .me li:last-child {margin: 0;}
+#wrap .info .me li a {}
+#wrap .info h2,
+#wrap .info .skill_list {
+    padding: 12px 15px;
+    margin: 0 0 12px;
+}
+#wrap .info h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem ;
+    font-weight: 500;
+}
+#wrap .info .skill_list {
+    padding: 0 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#wrap .info .skill_list p {
+    width: calc(100% / 6); margin: 0 0 12px;
+}
+#wrap .info .skill_list p img {width: 100%;}
+/* =======================================================3. project */
+#wrap .project_wrap {}
+#wrap .project_wrap h1 {text-align: center; margin: 0 0 30px;}
+/* =======================================================공통 프로젝트 선택자 */
+#wrap .project_wrap .project {width: calc(100% - 15px); margin: 0 auto 50px; overflow: hidden;}
+#wrap .project_wrap .project h2 {margin: 0 0 10px; font-size: 1.25rem;}
+#wrap .project_wrap .project h2 span {font-weight: 600;}
+#wrap .project_wrap .project .mockup {height: 372px; overflow: hidden;}
+#wrap .project_wrap .project .mockup img {height: 100%; }
+#wrap .project_wrap .project .project_info {margin: 15px 0 30px;}
+#wrap .project_wrap .project .project_info li {line-height: 1.8; position: relative; padding: 15px;}
+#wrap .project_wrap .project .project_info li::before {
+    content: ''; display: block;/* 중요함!! */
+    position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    background: #222; border-radius: 50%; width: 4px; height: 4px;
+}
+#wrap .project_wrap .project .project_info li:nth-child(3)::before {top: 20%;}
+#wrap .project_wrap .project .plan { line-height: 1.5;}
+#wrap .project_wrap .project .link {margin: 50px 0; display: flex; justify-content: center; gap:  10px;}
+#wrap .project_wrap .project .link a {padding: 10px 30px; border-radius: 8px; transition: filter 0.5s;}
+#wrap .project_wrap .project .link a:hover {filter:brightness(120%) sepia(50%)}
+#wrap .project_wrap .project .link .proposal {background-color: #FFA0A0; color: #fff;}
+#wrap .project_wrap .project .link .prototype {background-color: #FFA0A0; color: #fff;}
+/* =======================================================개별 프로젝트 선택자 */
+#wrap .project_wrap .project1 {}
+#wrap .project_wrap .project1 {}
+#wrap .project_wrap .project1 h2 {}
+#wrap .project_wrap .project1 .mockup {}
+#wrap .project_wrap .project .mockup img {
+    transform: translateX(-170px);
+}
+#wrap .project_wrap .project1 .project_info {}
+#wrap .project_wrap .project1 .project_info li {}
+#wrap .project_wrap .project1 .plan {}
+#wrap .project_wrap .project1 .link {}
+#wrap .project_wrap .project1 .link a {}
+#wrap .project_wrap .project1 .link a {}
