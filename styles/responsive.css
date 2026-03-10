@@ -1,0 +1,55 @@
+/* responsive.css */
+@media screen and (min-width:600px) {
+    /* 1행 글자크기, 여백 */
+    /* 2행 글자크기, 여백 */
+    #wrap .container .details {}
+    #wrap .container .details dl {
+        margin-bottom: 15px;
+    }
+    #wrap .container .details dl dt {
+        font-size: 0.94rem;
+        font-weight: 600;
+        line-height: 1.7;
+    }
+    #wrap .container .details dl dd {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    /* 3행 글자크기, 여백 */
+    #wrap .project_wrap .container .title_thum .mockup img {
+        height: auto; /* 덮어쓰기값으로 auto 변경 */
+        width: 100%;
+    }
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap .graphic_wrap .graphic_container a {
+        width: 246px; height: 400px;
+    }
+}/* 사용자가 보는 기기 너비가 600보다 크면 */
+@media screen and (min-width:840px) {
+    /* 2행 info ->1행 2열 레이아웃 구조 변경 */
+    #wrap .container {
+        height: auto; padding: 100px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #wrap .container .details {display: block;}
+    #wrap .container .details {}
+    #wrap .container .details dl {margin-bottom: 40px;}
+    #wrap .container .details dl dt {}
+    #wrap .container .details dl dd {}
+    #wrap .info .profile .skill_list p img {width: 50%;}
+    /* 3행 web ->1행 2열 레이아웃 구조 변경 */
+    #wrap .project_wrap .container {width: 100%; margin: 0 auto;}
+    #wrap .project_wrap .container .title_thum {}
+    #wrap .project_wrap .container .title_thum h2 {margin: 0 0 10px; font-size: 1.25rem;}
+    #wrap .project_wrap .container .title_thum h2 span {font-weight: 600;}
+    #wrap .project_wrap .container .title_thum .mockup {width: 100%;}
+        #wrap .project_wrap .container .title_thum .mockup img {width: 100%;}
+    #wrap .project_wrap .container .title_thum h1 {}
+    #wrap .project_wrap .container .project_details {}
+    #wrap .project_wrap .container .project_details .link {}
+    /* 4행 그대픽 이미지 확대 */
+}/* 사용자가 보는 기기 너비가 840보다 크면 */
